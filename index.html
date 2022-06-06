@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="sticky-header app-sidebar">
+        <div class="side-header">
+            <div class="admin-logo">
+                <img src="./images/logo.36f34a9f.svg">
+            </div>
+        </div>
+        <div class="side-menu">
+            <div class="list-menu">
+                <h3>MAIN</h3>
+            </div>
+            <div class="dashbord dash-main">
+                <i class="fa-solid fa-house"><span id="mainadmin">Dashboard</span></i>
+            </div>
+            <div class="list-menu listmenu">
+                <h3>UI KIT</h3>
+            </div>
+            <div class="dashbord">
+                <i class="fa-brands fa-slack"><span>Apps</span></i>
+            </div>
+            <div class="dashbord">
+                <i class="fa-solid fa-cube"><span>Bootstrap</span></i>
+            </div>
+            <div class="dashbord">
+                <i class="fa-solid fa-bolt"><span>Landing Page</span></i>
+            </div>
+            <div class="list-menu listmenuextraa">
+                <h3>Pre-build Pages</h3>
+            </div>
+            <nav role="navigation">
+                <ul>
+                    <li> <i class="fa-solid fa-layer-group"><a href="#" aria-haspopup="true">Pages</a></i>
+
+                        <ul class="dropdown" aria-label="submenu">
+                            <li><a href="" class="set-bottom">Profile</a></li>
+                            <li><a href="" class="set-bottom">Edit Profile</a></li>
+                            <li><a href="" class="set-bottom">Notification List</a></li>
+                            <li><a href="" class="set-bottom">Mail Inbox</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav role="navigation">
+                <ul>
+                    <li> <i class="fa-solid fa-bag-shopping"><a href="#" aria-haspopup="true">eCommerce</a></i>
+
+                        <ul class="dropdown" aria-label="submenu">
+                            <li><a href="" class="set-bottom">Shop</a></li>
+                            <li><a href="" class="set-bottom">Product Details</a></li>
+                            <li><a href="" class="set-bottom">Shopping Cart </a></li>
+                            <li><a href="" class="set-bottom">Wishlist</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="list-menu listmenuextraa">
+                <h3>User Interface</h3>
+            </div>
+            <div class="dashbord">
+                <i class="fa-solid fa-pen-fancy"><span>Typography</span></i>
+            </div>
+            <div class="dashbord">
+                <i class="fa-solid fa-palette"><span>Colors</span></i>
+            </div>
+            <div class="dashbord">
+                <i class="fa-solid fa-feather-pointed"><span>Feather</span></i>
+            </div>
+            <div class="dashbord">
+                <i class="fa-solid fa-credit-card"><span>Cards</span></i>
+            </div>
+            <div class="list-menu listmenuextraa">
+                <h3>GENERAL</h3>
+            </div>
+            <nav role="navigation">
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"><a href="#" aria-haspopup="true">Maps</a></i>
+
+                        <ul class="dropdown" aria-label="submenu">
+                            <li><a href="" class="set-bottom">Leaflet Maps</a></li>
+                            <li><a href="" class="set-bottom">Mapel Maps</a></li>
+                            <li><a href="" class="set-bottom">Vector Maps</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav role="navigation">
+                <ul>
+                    <li><i class="fa-solid fa-chart-column"><a href="#" aria-haspopup="true">Chart</a></i>
+
+                        <ul class="dropdown" aria-label="submenu">
+                            <li><a href="" class="set-bottom">Chart Js</a></li>
+                            <li><a href="" class="set-bottom">Flot Charts</a></li>
+                            <li><a href="" class="set-bottom">Morris Charts</a></li>
+                            <li><a href="" class="set-bottom">Nvd3 Charts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav role="navigation">
+                <ul>
+                    <li><i class="fa-solid fa-wind"><a href="#" aria-haspopup="true">Icons</a></i>
+
+                        <ul class="dropdown" aria-label="submenu">
+                            <li><a href="" class="set-bottom"> Font Awesome</a></li>
+                            <li><a href="" class="set-bottom"> Material Design Icons</a></li>
+                            <li><a href="" class="set-bottom"> Feather Icons</a></li>
+                            <li><a href="" class="set-bottom"> Flag Icons</a></li>
+                            <li><a href="" class="set-bottom"> Themify Icons</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <!-- left sidebar section ends -->
+    <div class="admin-dashboards">
+        <div class="admin-main ">
+            <div class="dashboard-detail">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="search-bar">
+                <div class="search">
+                    <form class="textinput">
+                        <input type="text" placeholder="Search for results...." name="search" required="">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="admin-icons">
+                <div class="admin-dashboardicons">
+                    <i class="fa-solid fa-globe"><span>English</span></i>
+                </div>
+                <div class="d-felex">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-compress"></i>
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="pluse"></span>
+                    <i class="fa-solid fa-message"></i>
+                    <span class="pluse-msg"></span>
+                </div>
+            </div>
+            <div class="admin-name">
+                <div class="admin-title">
+                    <h3>John Doe</h3>
+                    <p>admin</p>
+                </div>
+                <div class="admin-img">
+                    <img src="./images/13-small.d796bffd.png">
+                </div>
+            </div>
+        </div>
+        <div class="content-main">
+            <div class="main-dash">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Congratulations 🎉 John!</h5>
+                                <p class="card-text"> You have won gold medal </p>
+                                <span>$48.9k</span>
+                                <div class="span-rate">
+                                    <a href="#" class="btn btn-primary">View Sales</a>
+                                </div>
+                            </div>
+                            <div class="img-card">
+                                <img src="./images/badge.0fa134b5.svg">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-box">
+                            <div class="card-home">
+                                <div class="card-bo">
+                                    <h5 class="card-t">Statistics</h5>
+                                    <p class="card-te"> Updated 1 month ago </p>
+                                </div>
+                            </div>
+                            <div class="statics-sec">
+                                <div class="statics-div">
+                                    <div class="st-list">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                    </div>
+                                    <div class="st-text">
+                                        <h4> 230k </h4>
+                                        <p> Sales </p>
+                                    </div>
+                                    <div class="st-list2">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                    <div class="st-text">
+                                        <h4> 8.549k </h4>
+                                        <p> Customers </p>
+                                    </div>
+                                    <div class="st-list3">
+                                        <i class="fa-solid fa-cube"></i>
+                                    </div>
+                                    <div class="st-text">
+                                        <h4> 1.423k </h4>
+                                        <p> Products </p>
+                                    </div>
+                                    <div class="st-list4">
+                                        <i class="fa-solid fa-dollar-sign"></i>
+                                    </div>
+                                    <div class="st-text">
+                                        <h4> $9745 </h4>
+                                        <p> Revenue </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-section">
+            <div class="second-part">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="analtic">
+                            <div class="analtic-status">
+                                <div class="ca">
+                                    <div class="text-body">
+                                        <h5 class="ca-textnew">Sales Analytics</h5>
+                                    </div>
+                                    <div class="flex-sales">
+                                        <span class="dot-label"></span>
+                                        <span class="label-t">Total Sales</span>
+                                        <span class="dot-label"></span>
+                                        <span class="label-t">Total Orders</span>
+                                    </div>
+                                    <div class="trade-img">
+                                        <img src="./images/download (1).png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box-c">
+                            <div class="pie-charts">
+                                <h5>Order State</h5>
+                                <div class="months-set">
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Monthly</button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Yearly</a>
+                                            <a href="#">Monthly</a>
+                                            <a href="#">Weekly</a>
+                                            <a href="#">Today</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                            <div class="statu-pie">
+                                <div class="pi-chart">
+                                    <i class="fa-solid fa-square"><span class="label-pie">Order Completed</span></i>
+                                </div>
+                                <div class="pe-new">
+                                    <span class="pie-5">56,236</span>
+                                    <span class="span-pie">+ 0.2%</span>
+                                </div>
+                            </div>
+                            <div class="statu-pie">
+                                <div class="pi-chart">
+                                    <i class="fa-solid fa-square"><span class="label-pie">Order Cancel</span></i>
+                                </div>
+                                <div class="pe-new">
+                                    <span class="pie-5">13,125</span>
+                                    <span class="span-pi">+ 0.7%</span>
+                                </div>
+                            </div>
+                            <div class="statu-pie">
+                                <div class="pi-chart">
+                                    <i class="fa-solid fa-square"><span class="label-pie">Order Processing</span></i>
+                                </div>
+                                <div class="pe-new">
+                                    <span class="pie-5">7,520</span>
+                                    <span class="span-pienew">+ 0.4%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- third admin dashboard section starts -->
+
+        <div class="main-third">
+            <div class="row">
+                <div class="col-lg-4 ">
+                    <div class="c-header">
+                        <div class="header-title">
+                            <h4 class="acti">Daily Activity</h4>
+                        </div>
+                        <div class="c-inner">
+                            <div class="tast-list pb-0">
+                            </div>
+                            <div class="point"></div>
+                        </div>
+                        <div class="third-header">
+                            <h6 class="fw-semibold">Task Finished<span class="fw-normal mx-2">09 July 2021</span></h6>
+                            <div class="crud-icon">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="pb-2">
+                            <p class="text-muted">Adam Berry finished task on</p>
+                            <a href="#"> Integrated management</a>
+                        </div>
+                        <div class="tast-list pb-0">
+                        </div>
+                        <div class="circle"></div>
+                        <div class="third-headernew">
+                            <h6 class="fw-semibold">Task Overdue<span class="fw-normal mx-2">14 June 2021</span></h6>
+                            <div class="crud-icon">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="pb-2">
+                            <p class="text-muted">Adam Berry finished task on</p>
+                            <a href="#">Project Managment</a>
+                        </div>
+                        <div class="tast-list pb-0">
+                        </div>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <div class="third-headernew">
+                            <h6 class="fw-semibold">Task Processing<span class="fw-normal mx-2">15 July 2021</span></h6>
+                            <div class="crud-icon">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="pb-2">
+                            <p class="text-muted">Adam Berry finished task on</p>
+                            <a href="#">Project Managment</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="v-network">
+                        <div class="net-set">
+                            <div class="visit-st">
+                                <h4>Social Network Visits</h4>
+                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                            </div>
+                            <div class="number">
+                                <h5>28,468</h5>
+                                <span>62%</span>
+                            </div>
+                            <p class="p-text">Last 1 Year Visits</p>
+                            <div class="social-linknetwork">
+                                <div class="linksocial">
+                                    <img src="./images/social-facebook.png">
+                                </div>
+                                <div class="socail-des">
+                                    <p class=" mg-5">Facebook</p>
+                                    <span>Social Media</span>
+
+                                </div>
+                                <div class="admin-budget">
+                                    <span>12,348</span>
+
+                                </div>
+                                <div class="admin-rate">
+                                    <p class="adnews">+50%</p>
+                                </div>
+                            </div>
+                            <div class="social-linknetwork">
+                                <div class="linksocial">
+                                    <img src="./images/social-dribbble.png">
+                                </div>
+                                <div class="socail-des">
+                                    <p class=" mg-5">Dribbble</p>
+                                    <span>Dribbble</span>
+
+                                </div>
+                                <div class="admin-budget ad-new">
+                                    <span>24,348</span>
+
+                                </div>
+                                <div class="admin-rat2 rate-2">
+                                    <p class="adnews">+50%</p>
+                                </div>
+                            </div>
+                            <div class="social-linknetwork">
+                                <div class="linksocial">
+                                    <img src="./images/social-twitter.png">
+                                </div>
+                                <div class="socail-des ">
+                                    <p class=" mg-5">Twitter</p>
+                                    <span>Social Media</span>
+
+                                </div>
+                                <div class="admin-budget ">
+                                    <span>5,348</span>
+                                </div>
+                                <div class="admin-rate3 rate-3">
+                                    <p class="adnews">+50%</p>
+                                </div>
+                            </div>
+                            <div class="social-linknetwork">
+                                <div class="linksocial">
+                                    <img src="./images/social-instagram.png">
+                                </div>
+                                <div class="socail-des">
+                                    <p class=" mg-5">Instagram</p>
+                                    <span>Social Media</span>
+
+                                </div>
+                                <div class="admin-budget  ">
+                                    <span>20,348</span>
+                                </div>
+                                <div class="admin-rate4 rate-4">
+                                    <p class="adnews">+50%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="fourth-sec">
+                        <div class="fourth">
+                            <h4>Meeting Schedule</h4>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        </div>
+                        <div class="all-flex">
+                            <div class="meet-img">
+                                <img src="./images/2.png">
+                            </div>
+                            <div class="call">
+                                <p class="call-wwod">Call with Woods</p>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                <span>21 Jul | 08:20-10:30</span>
+                            </div>
+                            <div class="detail-meet">
+                                <p>Business</p>
+                            </div>
+                        </div>
+                        <div class="all-flex">
+                            <div class="meet-img">
+                                <img src="./images/4.png">
+                            </div>
+                            <div class="call">
+                                <p class="call-wwod">Conference call</p>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                <span>21 Jul | 04:20-7:30</span>
+                            </div>
+                            <div class="detail-meet2">
+                                <p class="detail-num">Meeting</p>
+                            </div>
+                        </div>
+                        <div class="all-flex">
+                            <div class="meet-img">
+                                <img src="./images/5.png">
+                            </div>
+                            <div class="call">
+                                <p class="call-wwod">Meeting with Mark
+                                </p>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                <span>21 Jul | 07:20-10:30</span>
+                            </div>
+                            <div class="detail-meet3">
+                                <p>Meetup</p>
+                            </div>
+                        </div>
+                        <div class="all-flex">
+                            <div class="meet-img">
+                                <img src="./images/8.png">
+                            </div>
+                            <div class="call">
+                                <p class="call-wwod">Call with Hilda</p>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                <span>21 Jul | 09:20-10:30</span>
+                            </div>
+                            <div class="detail-meet4">
+                                <p>Business</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fourth section starts -->
+    </div>
+</body>
+<script>
+    var ctx = document.getElementById("myChart");
+
+    var data = {
+        labels: [
+            "Complete",
+            "Cancel",
+            "Processing"
+        ],
+
+        datasets: [
+            {
+                data: [300, 50, 100],
+                backgroundColor: [
+                    "#7367f0",
+                    "#fba92c",
+                    "#28c76f"
+                ],
+                hoverBackgroundColor: [
+                    "#7367f0",
+                    "#fba92c",
+                    "#28c76f"
+                ]
+
+
+            }]
+    };
+    var options = {
+        cutoutPercentage: 40,
+    };
+    var myDoughnutChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: data,
+        options: options
+    });
+    // jquery 
+
+    $(document).ready(function () {
+        $(".fa-bars").click(function () {
+            $(".sticky-header").toggleClass("d-none");
+            $(".admin-dashboards").toggleClass("d-dashboard");
+        });
+    });
+</script>
+
+</html>
